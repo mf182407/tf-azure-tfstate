@@ -4,6 +4,10 @@ resource "azurerm_storage_account" "terraform_storage" {
   location                 = azurerm_resource_group.terraform_rg.location
   account_tier             = "Standard"
   account_replication_type = "LRS"
+
+  blob_properties {
+    versioning_enabled = "true"
+  }
 }
 
 resource "azurerm_storage_container" "terraform_container" {

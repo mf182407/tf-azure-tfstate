@@ -1,8 +1,9 @@
 # tf-azure-tfstate
 this repo will deploy a new:
-resource group for terraform
-storage account for terraform
-blob container for tfstate
+
+- resource group for terraform
+- storage account for terraform
+- blob container for tfstate
 
 ### instructions
 ```
